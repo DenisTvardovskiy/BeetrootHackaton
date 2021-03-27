@@ -23,18 +23,22 @@
                             <input class="text-field grid-el" type="text" name="first-name" id="first-name" placeholder="First Name" required>
                             <input class="text-field grid-el" type="text" name="midle-name" id="midle-name" placeholder="Midle Name (optional)" required>
                             <input class="text-field grid-el" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
-                            <input class="text-field grid-el" type="date" name="birth-date" id="birth-date" required>
+                            <input class="text-field grid-el" type="text" placeholder="Date of birth" onfocus="(this.type='date')" required> 
                         </div> 
-                        <!-- <p>Choose blood donation type</p> -->
-                        <div class="three-per-row grid-el">
+                        <div class="one-per-row-no-margin grid-el">
                             <div class="grid-el">
-                                <input type="checkbox" name="plasma" id="plasma"><span>plasma</span>
+                                <p><strong>Choose blood donation type</strong></p>
                             </div>
-                            <div class="grid-el">
-                                <input class="" type="checkbox" name="platelet " id="platelet"> <span>platelet</span>
-                            </div>
-                            <div class="grid-el">
-                                <input class="" type="checkbox" name="blood" id="blood"> <span>blood</span>
+                            <div class="three-per-row grid-el">
+                                <div class="grid-el">
+                                    <input class="" type="checkbox" name="blood" id="blood" checked> <span>blood</span>
+                                </div>
+                                <div class="grid-el">
+                                    <input type="checkbox" name="plasma" id="plasma"><span>plasma</span>
+                                </div>
+                                <div class="grid-el">
+                                    <input class="" type="checkbox" name="platelet " id="platelet"> <span>platelet</span>
+                                </div>
                             </div>
                         </div>
                         <div class="one-per-row grid-el">
@@ -55,10 +59,14 @@
                             <input class="grid-el text-field" type="text" name="city" id="city" placeholder="City">
                             <input class="grid-el text-field" type="number" name="donors-amount" id="donors-amount" placeholder="Donores needed" min="0">
                         </div>
-                        <div class="two-per-row grid-el">
-                            <!-- <p>Contact Person</p> -->
-                            <input class="text-field grid-el" type="tel" name="phone-number" id="phone-number" pattern="[0-9] {3} - [0-9] {3} - [0-9] {4}" placeholder="Phone number">
-                            <input class="text-field grid-el" type="email" name="email" id="email" placeholder="Email">
+                        <div class="one-per-row-no-margin grid-el">
+                            <div class="grid-el">
+                                <p><strong>Contact Person</strong></p>
+                            </div>
+                            <div class="two-per-row">
+                                <input class="text-field grid-el" type="tel" name="phone-number" id="phone-number" pattern="[0-9] {3} - [0-9] {3} - [0-9] {4}" placeholder="Phone number">
+                                <input class="text-field grid-el" type="email" name="email" id="email" placeholder="Email">
+                            </div>
                         </div>
                     </div>
                     <div class="one-per-row grid-el">
