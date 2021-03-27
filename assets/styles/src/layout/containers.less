@@ -1,0 +1,37 @@
+@import "../abstracts/_global.less";
+
+section{
+    width: 100%;
+    padding: 0 2vw;
+    box-sizing: border-box;
+    position: relative;
+    scroll-snap-align: start;
+}
+section.no-padding {
+    padding: 0;
+  }
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    background-position: center center;
+    background-size: cover;
+}
+.text-container{
+    width: 100%;
+
+}
+.dark-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: #191919;
+    opacity: 0.45;
+    transition: 0.2s all ease-out;
+  }
+  
