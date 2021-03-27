@@ -7,6 +7,49 @@
     <title>BloodBucket | Patient registration</title>
 </head>
 <body>
-    
+    <section class="needBlood-sign-up no-padding one-per-row-no-margin">
+        <div class="container grid-el column center-all">
+            <form action="" method="post">
+                <div class="basic-info">
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                    <input type="text" name="midle-name" id="midle-name" placeholder="Midle Name (optional)">
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                    <input type="date" name="birth-date" id="birth-date">
+                </div> 
+                <div class="blood-type-info">
+                    <p>Choose blood donation type</p>
+                    <div class="checkboxes-block">
+                        <input type="checkbox" name="plasma" id="plasma" > <span>plasma</span>
+                        <input type="checkbox" name="platelet " id="platelet "> <span>platelet </span>
+                        <input type="checkbox" name="blood" id="blood"> <span>blood</span>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    <select name="blood-type" id="blood-type">
+                        <option value="1">Blood type</option>
+                        <option value="2">I-</option>
+                        <option value="3">I+</option>
+                    </select>
+                    <input type="text" name="disease" id="disease"placeholder="Disease">
+                    <input type="text" name="collect-center" id="collect-center" placeholder="Blood coletion center">
+                    <input type="text" name="city" id="city" placeholder="City">
+                    <input type="number" name="donors-amount" id="donors-amount" placeholder="Donores needed" min="0">
+                </div>
+                <div class="contact-person-info">
+                    <h2>Contact Person</h2>
+                    <input type="text" name="full-name" id="full-name" placeholder="Fullname, who you are for this person">
+                    <input type="tel" name="phone-number" id="phone-number" pattern="[0-9] {3} - [0-9] {3} - [0-9] {4}" placeholder="Phone number">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="extra-info">
+                    <h2>Additional info</h2>
+                    <p>Provide us with as much information as posible. This will help us provide you with best quality service.</p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+    </section>
 </body>
 </html>
