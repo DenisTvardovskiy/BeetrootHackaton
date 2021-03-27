@@ -1,0 +1,54 @@
+
+<body>
+    <section class="donor-sign-up padding-left-only two-per-row-no-margin one-per-row-mobile">
+        <div class="container grid-el column center-all">
+            <header class="header vertical-center">
+                <a class="logo" href="/">BloodBucket</a>
+            </header>
+            <div class="form-container center-all column">
+                <form class="column" action="" method="post">
+                    <h2>Sign up</h2>
+                    <div class="one-per-row">
+                        <input class="text-field grid-el" type="text" name="firstName" id="firstNname" placeholder="First Name" required>
+                        <input class="text-field grid-el" type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                        <div class="two-per-row grid-el">
+                            <input class="text-field grid-el" type="email" name="email" id="email" placeholder="Email" required>
+                            <input class="text-field grid-el" type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone number" required>
+                        </div>
+                    </div>
+                    <div class="one-per-row">
+                        <input class="text-field grid-el"  type="password" name="pass" id="pass" placeholder="Enter password" required>
+                        <input class="text-field grid-el"  type="password" name="sec-pass" id="sec-pass" placeholder="Re-enter password" required>
+                    </div>
+                    <div class="one-per-row">
+                        <div class="two-per-row grid-el">
+                            <select class="default-select-field grid-el" name="bloodGroup" id="bloodGroup" required>
+                                <option value="Blood type">Blood type</option>
+                                <option value="First positive O(I)Rh(+)">First positive O(I)Rh(+)</option>
+                                <option value="First negative O(I)Rh(-)">First negative O(I)Rh(-)</option>
+                                <option value="Second positive O(II)Rh(+)">Second positive O(II)Rh(+)</option>
+                                <option value="Second negative O(II)Rh(-)">Second negative O(II)Rh(-)</option>
+                                <option value="Third positive O(III)Rh(+)">Third positive O(III)Rh(+)</option>
+                                <option value="Third negative O(III)Rh(-)">Third negative O(III)Rh(-)</option>
+                                <option value="Fourth positive O(IV)Rh(+)">Fourth positive O(IV)Rh(+)</option>
+                                <option value="Fourth negative O(IV)Rh(-)">Fourth negative O(IV)Rh(-)</option>
+                                <option value="Any">Any</option>
+                            </select>
+                            <select class="default-select-field grid-el" name="sex" id="sex" required>
+                                <option value="sex">Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <input class="text-field grid-el" type="text" name="city" id="city" placeholder="City">
+                        <input class="text-field grid-el" type="text" name="birthDate", id="birthDate" placeholder="Date of birth" onfocus="(this.type='date')" required> 
+                    </div>
+                    <input class="button style-light" type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+        <div class="container grid-el">
+            <img src="/assets/img/png/header-1.png" alt="">
+        </div>
+    </section>
+</body>
