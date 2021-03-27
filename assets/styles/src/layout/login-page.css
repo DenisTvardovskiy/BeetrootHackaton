@@ -1,0 +1,22 @@
+/*
+* 
+* This file contains all useful variables
+*
+*/
+/*
+* COLORS
+*/
+/*
+* Margins/Paddings
+*/
+/*
+* Typhography font-size
+*/
+section.log-in {
+  height: 100vh;
+}
+section.log-in .container {
+  min-height: 100vh;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
