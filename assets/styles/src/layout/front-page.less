@@ -2,15 +2,28 @@
 section.front-page{
     & .container{
         min-height: 100vh;
-        .dev-border();
+        &.action{
+            h4{
+                z-index: 3;
+                color:@whiteColor;
+                font-weight: 600;
+            }
+            & .dark-bg{
+                z-index: 2;
+            }
+            & img{
+                z-index: 1;
+                .image-fit;
+                .absolute-pos;
+            }
+            &:hover{
+                & .dark-bg{
+                    .min-opacity();
+                }
+            }
+        }
         & header.header{
             padding-left: 2vw;
-            & a.logo{
-                text-transform: uppercase;
-                color:@redColor;
-                font-weight: 600;
-                font-size: @h6-size;
-            }
         }
         & .text-container{
             box-sizing: border-box;

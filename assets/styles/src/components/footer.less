@@ -5,8 +5,12 @@
 */
 section.site-footer{
     background-color: @darkColor;
-    footer.footer{
+    & footer.footer{
         width: 100%;
-        height: 100px;
+        min-height: 100px;
+        clear: both;
+        & a.logo{
+            color:@whiteColor;
+        }
     }
 }
