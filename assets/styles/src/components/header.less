@@ -43,8 +43,18 @@ section.header-default{
 
 @media (max-width: 767px) {
     header.header{
-        nav.navigation{
-            
+        & nav.navigation{
+            padding-top: @defaultSpace;
+            .column;
+            .nav-left{
+                .column;
+                & ul{
+                    margin-top: @elementSpace;
+                }
+            }
+            .nav-right{
+                .horizontal-center;
+            }
         }
     }
 }
