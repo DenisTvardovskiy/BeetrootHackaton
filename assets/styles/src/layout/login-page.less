@@ -5,6 +5,26 @@ section.log-in{
     height: 100vh;
     & .container{
         min-height: 100vh;
-        .dev-border()
+        .dev-border();
+        & form{
+            & input{
+                margin: 10px 0 ;
+                padding: 5px;
+                &:focus{
+                    outline: none;
+                }
+                &:active{
+                    outline: none;
+                }
+            }
+            & #email{
+                min-height: 30px;
+                .radius-all();
+                background: none;
+                border: 3px solid @redColor;
+            }
+            
+        }
+
     }
 }

@@ -7,6 +7,37 @@
     <title>BloodBucket | Sign Up</title>
 </head>
 <body>
-    
+    <section class="donor-sign-up no-padding one-per-row-no-margin">
+        <div class="container grid-el column center-all">
+            <form action="" method="post">
+                <input type="text" name="full-name" id="full-name" placeholder="Full name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="tel" name="phone-number" id="phone-number" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="date" name="birth-date" id="birth-date" placeholder="Birth date">
+                <input type="password" name="pass" id="pass" placeholder="Enter password">
+                <input type="password" name="sec-pass" id="sec-pass" placeholder="Re-enter password">
+                <select name="bloodGroup" id="bloodGroup">
+                    <option value="1">Blood type</option>
+                    <option value="2">First positive O(I)Rh(+)</option>
+                    <option value="3">First negative O(I)Rh(-)</option>
+                    <option value="4">Second positive O(II)Rh(+)</option>
+                    <option value="5">Second negative O(II)Rh(-)</option>
+                    <option value="6">Third positive O(III)Rh(+)</option>
+                    <option value="7">Third negative O(III)Rh(-)</option>
+                    <option value="8">Fourth positive O(IV)Rh(+)</option>
+                    <option value="9">Fourth negative O(IV)Rh(-)</option>
+                    <option value="10">Any</option>
+                </select>
+                <select name="Sex" id="sex">
+                    <option value="1">Sex</option>
+                    <option value="2">Male</option>
+                    <option value="3">Female</option>
+                </select>
+                <input type="text" name="city" id="city" placeholder="City">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+
+    </section>
 </body>
 </html>
