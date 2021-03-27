@@ -13,6 +13,20 @@ body.account-page{
             .shadow();
             .radius-all();
 
+            & .verified{
+              min-width: 120px;
+              min-height: auto;
+              color:@greenColor;
+              border:2px solid @greenColor;
+              top:15px !important;
+              right: 15px !important;
+              border-radius: 30px;
+              .absolute-pos-right();
+
+              & h6{
+                margin: 5px;
+              }
+            }
             & .user-avatar{
                 width: 40%;
                 min-height: 350px;
@@ -21,16 +35,6 @@ body.account-page{
                 & img.avatar-image{
                   .image-fit();
                   .radius-all();
-                }
-                & .verified{
-                  width: 100px;
-                  height: 100px;
-                  background-color: @redColor;
-                  .radius-all();
-                  .absolute-pos();
-                  & img{
-                    width: 50%;
-                  }
                 }
             }
             & .text-container{
