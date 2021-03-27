@@ -1,0 +1,30 @@
+form{
+    & input.text-field{
+        width: 100%;
+        height: 50px;
+        outline: none;
+        margin: calc(@elementSpace / 2) 0;
+        box-sizing: border-box;
+        padding: calc(@elementSpace / 2);
+        border:2px solid @darkColor;
+        .default-transition();
+        .radius-all();
+        &:focus{
+            border:2px solid @redColor;
+        }
+    }
+    & .button.style-light{
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background-color: @redColor;
+        color:@whiteColor;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: @h6-size;
+        margin-top: @elementSpace;
+        .radius-all();
+    }
+}

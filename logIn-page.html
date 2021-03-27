@@ -9,14 +9,22 @@
     <title>BloodBucket | Log in</title>
 </head>
 <body>
-    <section class="log-in no-padding one-per-row-no-margin">
-        <div class="container grid-el column center-all">
-            <form action="" method="post" class="column">
-                <h2>Log in</h2>
-                <input class="" type="email" name="email" id="email" placeholder="Enter your e-mail">
-                <input type="password" name="password" id="password" placeholder="Enter your password">
-                <input type="submit" value="Log In">
-            </form>
+    <section class="log-in padding-left-only two-per-row-no-margin one-per-row-mobile">
+        <div class="container grid-el column">
+            <header class="header vertical-center">
+                <a class="logo" href="/">BloodBucket</a>
+            </header>
+            <div class="form-container center-all">
+                <form action="" method="post" class="column">
+                    <h2>Log in</h2>
+                    <input class="text-field" type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+                    <input class="text-field" type="password" name="password" id="password" placeholder="Enter your password" required>
+                    <input class="button style-light" type="submit" value="Log In">
+                </form>
+            </div>
+        </div>
+        <div class="container grid-el">
+            <img src="./assets/img/jpg/login.jpg" alt="">
         </div>
     </section>
 </body>
