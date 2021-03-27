@@ -18,10 +18,19 @@ body.account-page{
                 min-height: 350px;
                 position: relative;
                 .radius-all();
-                
-                & img{
-                    .image-fit();
-                    .radius-all();
+                & img.avatar-image{
+                  .image-fit();
+                  .radius-all();
+                }
+                & .verified{
+                  width: 100px;
+                  height: 100px;
+                  background-color: @redColor;
+                  .radius-all();
+                  .absolute-pos();
+                  & img{
+                    width: 50%;
+                  }
                 }
             }
             & .text-container{
@@ -58,10 +67,10 @@ body.account-page{
                     font-size: @h6-size;
                     .default-transition();
                     .radius-all();
-                    & img{
-                      width:20%;
-                      margin: @elementSpace;
-                    }
+                      & img{
+                        width:20%;
+                        margin: @elementSpace;
+                      }
                   }
                 }
             }
