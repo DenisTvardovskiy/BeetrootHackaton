@@ -21,6 +21,7 @@ body.account-page{
               top:15px !important;
               right: 15px !important;
               border-radius: 30px;
+              z-index: 999;
               .absolute-pos-right();
 
               & h6{
@@ -48,34 +49,19 @@ body.account-page{
                 .radius-all();
             }
             &.info{
+              background: none;
+              box-shadow: none;
+                & .text-container, .input-container{
+                  background-color: @whiteColor;
+                  box-sizing: border-box;
+                  min-height: 350px;
+                  .shadow();
+                  .radius-all();
+                }
                 & .text-container{
-                    min-height: 350px;
                     & strong{
                         color: @redColor;  
                     }
-                }
-                & .input-container{
-                  & input{
-                    width: 100%;
-                    min-height: 350px;
-                  }
-                  input[type="file"] {
-                    display: none;
-                  }
-                  & .custom-file-upload {
-                    width: 100%;
-                    height: 100%;
-                    background-color: @greyColor;
-                    cursor: pointer;
-                    font-weight: 600;
-                    font-size: @h6-size;
-                    .default-transition();
-                    .radius-all();
-                      & img{
-                        width:20%;
-                        margin: @elementSpace;
-                      }
-                  }
                 }
             }
             &.blood-collection{
@@ -161,4 +147,17 @@ body.account-page{
             }
         }
     }
+}
+@media (max-width: 767px) {
+  section.account-container{
+    & .text-container{
+        min-height: 200px;
+    }
+    & .verified{
+      background-color: @greenColor;
+      & h6{
+        color:@whiteColor;
+      }
+    }
+  }
 }
