@@ -2,13 +2,6 @@
 @import "../abstracts/_global.less";
 
 
-.form-container{
-    width: 100%;
-    height: calc(100vh - 100px);
-    & form{
-        width: 55%;                
-    }
-}
 section.log-in,
 section.donor-sign-up,
 section.needBlood-sign-up{
@@ -17,6 +10,13 @@ section.needBlood-sign-up{
         & img{
             .image-fit();
             .absolute-pos();
+        }
+        & .form-container{
+            width: 100%;
+            min-height: calc(100vh - 100px);
+            & form{
+                width: 55%;                
+            }
         }
     }
 }

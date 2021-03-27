@@ -15,52 +15,60 @@
             <header class="header vertical-center">
                 <a class="logo" href="/">BloodBucket</a>
             </header>
-            <form action="" method="post">
-                <div class="">
-                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
-                    <input type="text" name="midle-name" id="midle-name" placeholder="Midle Name (optional)">
-                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
-                    <input type="date" name="birth-date" id="birth-date">
-                </div> 
-                <div class="blood-type-info">
-                    <p>Choose blood donation type</p>
-                    <div class="checkboxes-block">
-                        <input type="checkbox" name="plasma" id="plasma" > <span>plasma</span>
-                        <input type="checkbox" name="platelet " id="platelet "> <span>platelet </span>
-                        <input type="checkbox" name="blood" id="blood"> <span>blood</span>
+            <div class="form-container center-all column">
+                <form class="" action="" method="post">
+                    <h2>Sign Up</h2>
+                    <div class="one-per-row">
+                        <div class="two-per-row grid-el">
+                            <input class="text-field grid-el" type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                            <input class="text-field grid-el" type="text" name="midle-name" id="midle-name" placeholder="Midle Name (optional)" required>
+                            <input class="text-field grid-el" type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                            <input class="text-field grid-el" type="date" name="birth-date" id="birth-date" required>
+                        </div> 
+                        <!-- <p>Choose blood donation type</p> -->
+                        <div class="three-per-row grid-el">
+                            <div class="grid-el">
+                                <input type="checkbox" name="plasma" id="plasma"><span>plasma</span>
+                            </div>
+                            <div class="grid-el">
+                                <input class="" type="checkbox" name="platelet " id="platelet"> <span>platelet</span>
+                            </div>
+                            <div class="grid-el">
+                                <input class="" type="checkbox" name="blood" id="blood"> <span>blood</span>
+                            </div>
+                        </div>
+                        <div class="one-per-row grid-el">
+                            <select class="default-select-field grid-el" name="blood-type" id="blood-type">
+                                <option value="1">Blood type</option>
+                                <option value="2">First positive O(I)Rh(+)</option>
+                                <option value="3">First negative O(I)Rh(-)</option>
+                                <option value="4">Second positive O(II)Rh(+)</option>
+                                <option value="5">Second negative O(II)Rh(-)</option>
+                                <option value="6">Third positive O(III)Rh(+)</option>
+                                <option value="7">Third negative O(III)Rh(-)</option>
+                                <option value="8">Fourth positive O(IV)Rh(+)</option>
+                                <option value="9">Fourth negative O(IV)Rh(-)</option>
+                                <option value="10">Any</option>
+                            </select>
+                            <input class="grid-el text-field" type="text" name="disease" id="disease" placeholder="Disease">
+                            <input class="grid-el text-field" type="text" name="collect-center" id="collect-center" placeholder="Blood coletion center">
+                            <input class="grid-el text-field" type="text" name="city" id="city" placeholder="City">
+                            <input class="grid-el text-field" type="number" name="donors-amount" id="donors-amount" placeholder="Donores needed" min="0">
+                        </div>
+                        <div class="two-per-row grid-el">
+                            <!-- <p>Contact Person</p> -->
+                            <input class="text-field grid-el" type="tel" name="phone-number" id="phone-number" pattern="[0-9] {3} - [0-9] {3} - [0-9] {4}" placeholder="Phone number">
+                            <input class="text-field grid-el" type="email" name="email" id="email" placeholder="Email">
+                        </div>
                     </div>
-                </div>
-                <div class="additional-info">
-                    <select name="blood-type" id="blood-type">
-                        <option value="1">Blood type</option>
-                        <option value="2">First positive O(I)Rh(+)</option>
-                        <option value="3">First negative O(I)Rh(-)</option>
-                        <option value="4">Second positive O(II)Rh(+)</option>
-                        <option value="5">Second negative O(II)Rh(-)</option>
-                        <option value="6">Third positive O(III)Rh(+)</option>
-                        <option value="7">Third negative O(III)Rh(-)</option>
-                        <option value="8">Fourth positive O(IV)Rh(+)</option>
-                        <option value="9">Fourth negative O(IV)Rh(-)</option>
-                        <option value="10">Any</option>
-                    </select>
-                    <input type="text" name="disease" id="disease"placeholder="Disease">
-                    <input type="text" name="collect-center" id="collect-center" placeholder="Blood coletion center">
-                    <input type="text" name="city" id="city" placeholder="City">
-                    <input type="number" name="donors-amount" id="donors-amount" placeholder="Donores needed" min="0">
-                </div>
-                <div class="contact-person-info">
-                    <h2>Contact Person</h2>
-                    <input type="text" name="full-name" id="full-name" placeholder="Fullname, who you are for this person">
-                    <input type="tel" name="phone-number" id="phone-number" pattern="[0-9] {3} - [0-9] {3} - [0-9] {4}" placeholder="Phone number">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                </div>
-                <div class="extra-info">
-                    <h2>Additional info</h2>
-                    <p>Provide us with as much information as posible. This will help us provide you with best quality service.</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <input type="submit" value="Register">
-            </form>
+                    <div class="extra-info">
+                        <p>Additional info</p>
+                        <p>Provide us with as much information as posible. This will help us provide you with best quality service.</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
         </div>
         <div class="container grid-el">
             <img src="./assets/img/png/header-1.png" alt="">
