@@ -1,0 +1,121 @@
+@import "../abstracts/_global.less";
+
+body.account-page{
+    background-color: @greyColor;
+    & section.account-container{
+        min-height: calc(100vh - 100px);
+        padding-top: @defaultSectionPadding;
+        padding-bottom: @defaultSectionPadding;
+        & .profile{
+            min-height: 350px;
+            background-color: @whiteColor;
+            box-sizing: border-box
+            .shadow();
+            .radius-all();
+
+            & .user-avatar{
+                width: 40%;
+                height: 100%;
+                position: relative;
+                .radius-all();
+                
+                & img{
+                    .image-fit();
+                    .radius-all();
+                }
+            }
+            & .text-container{
+                width: 60%;
+                box-sizing: border-box;
+                padding: @defaultSectionPadding;
+            }
+            & iframe{
+                width: 100%;
+                height: 100%;
+                .radius-all();
+            }
+            &.info{
+                & .text-container{
+                    width: 100%;
+                    height: 100%;
+                    & strong{
+                        color: @redColor;  
+                    }
+                }
+            }
+            &.blood-collection{
+                padding: @defaultSpace;
+                & .shape {
+                    width: 100%;
+                    height: 100%;
+                    border: 4px solid @darkColor;
+                    overflow: hidden;
+                    position: relative;
+                    .radius-all();
+                    & .iframe {
+                        position: absolute;
+                        // transform: rotate(-10deg);
+                        background-color: @redColor;
+                        bottom: -8px;
+                        left: 15px;
+                        right: 0;
+                        height: 245px;
+                        width: 200px;
+                      }
+                      
+                      & .blood {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 200%;
+                        height: 200%;
+                        transform: translate(-25%, 0);
+                        background: @redColor;
+                        animation: fill-up 10s ease-in-out infinite;
+                        animation-direction: alternate-reverse;
+                      }
+                      
+                      @keyframes fill-up {
+                        to {
+                          top: -60%;
+                        }
+                      }
+                      
+                      & .blood:before,
+                      & .blood:after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(-50%, -75%);
+                        background: @redColor;
+                      }
+                      
+                      & .blood:before {
+                        border-radius: 45%;
+                        background: @redColor;
+                        animation: animate 3s linear infinite;
+                      }
+                      
+                      & .blood:after {
+                        border-radius: 40%;
+                        background: @whiteColor;
+                        animation: animate 3s linear infinite;
+                      }
+                      
+                      @keyframes animate {
+                        0% {
+                          transform: translate(-50%, -75%) rotate(0deg);
+                        }
+                        100% {
+                          transform: translate(-50%, -75%) rotate(360deg);
+                        }
+                      }
+                  }
+                  
+            }
+        }
+    }
+}
