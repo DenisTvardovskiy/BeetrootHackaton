@@ -17,19 +17,19 @@
             <div class="form-container center-all lumn">
                 <form class="column" action="" method="post">
                     <h2>Sign up</h2>
-                    <div>
-                        <input class="text-field" type="text" name="full-name" id="full-name" placeholder="Full name" required>
-                        <div class="two-per-row">
+                    <div class="one-per-row">
+                        <input class="text-field grid-el" type="text" name="full-name" id="full-name" placeholder="Full name" required>
+                        <div class="two-per-row grid-el">
                             <input class="text-field grid-el" type="email" name="email" id="email" placeholder="Email" required>
                             <input class="text-field grid-el" type="tel" name="phone-number" id="phone-number" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                         </div>
                     </div>
-                    <div>
-                        <input class="text-field"  type="password" name="pass" id="pass" placeholder="Enter password" required>
-                        <input class="text-field"  type="password" name="sec-pass" id="sec-pass" placeholder="Re-enter password" required>
+                    <div class="one-per-row">
+                        <input class="text-field grid-el"  type="password" name="pass" id="pass" placeholder="Enter password" required>
+                        <input class="text-field grid-el"  type="password" name="sec-pass" id="sec-pass" placeholder="Re-enter password" required>
                     </div>
-                    <div>
-                        <div class="two-per-row">
+                    <div class="one-per-row">
+                        <div class="two-per-row grid-el">
                             <select class="default-select-field grid-el" name="bloodGroup" id="bloodGroup" required>
                                 <option value="1">Blood type</option>
                                 <option value="2">First positive O(I)Rh(+)</option>
@@ -48,8 +48,8 @@
                                 <option value="3">Female</option>
                             </select>
                         </div>
-                        <input class="text-field" type="text" name="city" id="city" placeholder="City" readonly>
-                        <input class="text-field" type="date" name="birth-date" id="birth-date" placeholder="Birth date" required>
+                        <input class="text-field grid-el" type="text" name="city" id="city" placeholder="City" readonly>
+                        <input class="text-field grid-el" type="date" name="birth-date" id="birth-date" placeholder="Birth date" required>
                     </div>
                     <input class="button style-light" type="submit" value="Register">
                 </form>
