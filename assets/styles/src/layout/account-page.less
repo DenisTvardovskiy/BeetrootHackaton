@@ -25,7 +25,6 @@ body.account-page{
                 }
             }
             & .text-container{
-                width: 60%;
                 min-height: 350px;
                 box-sizing: border-box;
                 padding: @defaultSectionPadding;
@@ -38,13 +37,32 @@ body.account-page{
             &.info{
                 & .text-container{
                     min-height: 350px;
-                    height: 100%;
                     & strong{
                         color: @redColor;  
                     }
                 }
                 & .input-container{
-
+                  & input{
+                    width: 100%;
+                    min-height: 350px;
+                  }
+                  input[type="file"] {
+                    display: none;
+                  }
+                  & .custom-file-upload {
+                    width: 100%;
+                    height: 100%;
+                    background-color: @greyColor;
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-size: @h6-size;
+                    .default-transition();
+                    .radius-all();
+                    & img{
+                      width:20%;
+                      margin: @elementSpace;
+                    }
+                  }
                 }
             }
             &.blood-collection{
