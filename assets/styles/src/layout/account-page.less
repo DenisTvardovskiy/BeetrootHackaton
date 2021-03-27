@@ -7,7 +7,6 @@ body.account-page{
         padding-top: @defaultSectionPadding;
         padding-bottom: @defaultSectionPadding;
         & .profile{
-            min-height: 350px;
             background-color: @whiteColor;
             box-sizing: border-box;
             position: relative;
@@ -16,7 +15,7 @@ body.account-page{
 
             & .user-avatar{
                 width: 40%;
-                height: 100%;
+                min-height: 350px;
                 position: relative;
                 .radius-all();
                 
@@ -27,6 +26,7 @@ body.account-page{
             }
             & .text-container{
                 width: 60%;
+                min-height: 350px;
                 box-sizing: border-box;
                 padding: @defaultSectionPadding;
             }
@@ -37,16 +37,20 @@ body.account-page{
             }
             &.info{
                 & .text-container{
-                    width: 100%;
+                    min-height: 350px;
                     height: 100%;
                     & strong{
                         color: @redColor;  
                     }
                 }
+                & .input-container{
+
+                }
             }
             &.blood-collection{
                 padding: @defaultSpace;
                 & .bucket{
+                  min-height: 350px;
                     position: relative;
                     .text-container{
                         width: 100%;
