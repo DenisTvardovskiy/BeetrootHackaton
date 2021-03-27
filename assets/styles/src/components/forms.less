@@ -1,7 +1,7 @@
 form{
     & input.text-field{
         width: 100%;
-        height: 50px;
+        height: 45px;
         outline: none;
         margin: calc(@elementSpace / 2) 0;
         box-sizing: border-box;
@@ -26,5 +26,18 @@ form{
         font-size: @h6-size;
         margin-top: @elementSpace;
         .radius-all();
+    }
+    & select.default-select-field{
+        height: 40px;
+        outline: none;
+        border:2px solid @darkColor;
+        margin-top: @elementSpace;
+        background: none;
+        .radius-all();
+        .default-transition();
+        &:focus{
+            border:2px solid @darkColor;
+
+        }
     }
 }

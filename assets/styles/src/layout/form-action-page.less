@@ -1,0 +1,21 @@
+//main: ../style.less 
+@import "../abstracts/_global.less";
+
+
+.form-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+    & form{
+        width: 55%;                
+    }
+}
+section.log-in,
+section.donor-sign-up{
+    & .container{
+        min-height: 100vh;
+        & img{
+            .image-fit();
+            .absolute-pos();
+        }
+    }
+}
